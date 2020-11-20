@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Larsseit';
+  src: local('Larsseit'),
+      url('../fonts/Larsseit/Larsseit.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Larsseit/Larsseit-Bold.woff2') format('woff2'),
+      url('../fonts/Larsseit/Larsseit.woff') format('woff'),
+      url('../fonts/Larsseit/Larsseit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Larsseit';
+  src: local('Larsseit Bold'), local('Larsseit-Bold'),
+      url('../fonts/Larsseit/Larsseit-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Larsseit/Larsseit-Bold.woff2') format('woff2'),
+      url('../fonts/Larsseit/Larsseit-Bold.woff') format('woff'),
+      url('../fonts/Larsseit/Larsseit-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Larsseit';
+  src: local('Larsseit Italic'), local('Larsseit-Italic'),
+      url('../fonts/Larsseit/Larsseit-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Larsseit/Larsseit-Italic.woff2') format('woff2'),
+      url('../fonts/Larsseit/Larsseit-Italic.woff') format('woff'),
+      url('../fonts/Larsseit/Larsseit-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
