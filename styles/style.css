@@ -7,8 +7,7 @@
       url('../fonts/Larsseit/Larsseit.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-@font-face {
+} @font-face {
   font-family: 'Larsseit';
   src: local('Larsseit Bold'), local('Larsseit-Bold'),
       url('../fonts/Larsseit/Larsseit-Bold.eot?#iefix') format('embedded-opentype'),
@@ -17,8 +16,7 @@
       url('../fonts/Larsseit/Larsseit-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
-}
-@font-face {
+} @font-face {
   font-family: 'Larsseit';
   src: local('Larsseit Italic'), local('Larsseit-Italic'),
       url('../fonts/Larsseit/Larsseit-Italic.eot?#iefix') format('embedded-opentype'),
@@ -27,4 +25,29 @@
       url('../fonts/Larsseit/Larsseit-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+}
+
+/* Common styles */
+
+body {
+  font-family: 'Larsseit';
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Main header */
+
+/* Content centering */
+.main-header {
+  padding: 0 15px;
+} @media (min-width: 1145px) {
+  .main-header {
+    padding: 0 calc(50vw - 565px);
+  }
+}
+.main-header {
+  color: #22356F;
+  background-color: #F4F9E2;
+  padding-top: 27px;
+  padding-bottom: 75px;
 }
