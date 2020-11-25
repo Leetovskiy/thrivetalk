@@ -40,14 +40,124 @@ body {
 /* Content centering */
 .main-header {
   padding: 0 15px;
-} @media (min-width: 1145px) {
+}
+@media (min-width: 1145px) {
   .main-header {
     padding: 0 calc(50vw - 565px);
   }
 }
+
 .main-header {
+  font: inherit;
   color: #22356F;
-  background-color: #F4F9E2;
+  background: url('../img/bc-main-header.png') no-repeat center right 10%,
+              url('../img/bc-main-header2.png') no-repeat center right 10%,
+              linear-gradient(to right,#F4F9E2 80%,#fff 20%);
   padding-top: 27px;
   padding-bottom: 75px;
+}
+
+@media (max-width: 1145px) {
+  .main-header {
+    background: url('../img/bc-main-header.png') no-repeat center right,
+                url('../img/bc-main-header2.png') no-repeat center right,
+                linear-gradient(to right,#F4F9E2 80%,#fff 20%);
+  }
+}
+@media (max-width: 1000px) {
+  .main-header {
+    background: #F4F9E2;
+  }
+}
+
+.main-header .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 164px;
+}
+
+.main-header .main-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-header .main-nav a {
+  color: #22356F;
+  text-decoration: none;
+
+  padding: 0 13px;
+}
+
+.main-header .main-nav .nav-item.current {
+  position: relative;
+  user-select: none;
+}
+
+.main-header .main-nav .nav-item.current::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #22356F;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 25px);
+}
+
+.main-header .promo {
+  width: 484px;
+}
+@media (max-width: 1000px) {
+  .main-header .promo {
+    margin: 0 auto;
+  }
+}
+
+.main-header .promo .title {
+  font: inherit;
+  font-weight: bold;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.main-header .promo .text {
+  font: inherit;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.main-header .promo .btn {
+  font: inherit;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #FAB63E;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-header .promo .btn-filled {
+  color: #fff;
+  background-color: #F9B640;
+}
+
+.main-header .contact-btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  background-color: #62D0DF;
+  font: inherit;
+  font-weight: bold;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50px;
 }
