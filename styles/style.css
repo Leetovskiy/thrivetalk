@@ -35,6 +35,14 @@ body {
   font-style: normal;
 }
 
+header,
+footer,
+section,
+div {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
 /* Main header */
 
 /* Content centering */
@@ -50,17 +58,16 @@ body {
 .main-header {
   font: inherit;
   color: #22356F;
-  background: url('../img/bc-main-header.png') no-repeat center right 10%,
-              url('../img/bc-main-header2.png') no-repeat center right 10%,
+  background: url('../img/bg-main-header.png') no-repeat center right 10%,
+              url('../img/bg-main-header2.png') no-repeat center right 10%,
               linear-gradient(to right,#F4F9E2 80%,#fff 20%);
   padding-top: 27px;
   padding-bottom: 75px;
 }
-
 @media (max-width: 1145px) {
   .main-header {
-    background: url('../img/bc-main-header.png') no-repeat center right,
-                url('../img/bc-main-header2.png') no-repeat center right,
+    background: url('../img/bg-main-header.png') no-repeat center right,
+                url('../img/bg-main-header2.png') no-repeat center right,
                 linear-gradient(to right,#F4F9E2 80%,#fff 20%);
   }
 }
@@ -112,7 +119,7 @@ body {
 }
 
 .main-header .promo {
-  width: 484px;
+  max-width: 484px;
 }
 @media (max-width: 1000px) {
   .main-header .promo {
@@ -154,10 +161,67 @@ body {
   color: #fff;
   background-color: #62D0DF;
   font: inherit;
+  font-size: 14px;
   font-weight: bold;
   line-height: 50px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   border-radius: 50px;
+}
+
+/* Features section */
+
+.features {
+  padding: 95px 15px;
+  background: url('../img/bg-features.jpg') no-repeat center right,
+            #62D0DF;
+  font: inherit;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1145px) {
+  .features {
+    padding: 95px calc(50vw - 565px);
+    background: url('../img/bg-features.jpg') no-repeat center right 8%,
+              #62D0DF;
+  }
+}
+@media (max-width: 1095px) {
+  .features::after {
+    content: '';
+    display: block;
+    width: 525px;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.features .wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 555px;
+}
+
+.features .title {
+  font: inherit;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.features .text {
+  font: inherit;
+  font-size: 20px;
+}
+
+.features .text .strong {
+  font: inherit;
+  font-weight: bold;
+  font-size: 24px;
 }
