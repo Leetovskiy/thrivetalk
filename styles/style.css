@@ -51,7 +51,7 @@ div {
 }
 @media (min-width: 1145px) {
   .main-header {
-    padding: 0 calc(50vw - 565px);
+    padding: 0 calc(50vw - 548px);
   }
 }
 
@@ -59,15 +59,15 @@ div {
   font: inherit;
   color: #22356F;
   background: url('../img/bg-main-header.png') no-repeat center right 10%,
-              url('../img/bg-main-header2.png') no-repeat center right 10%,
+              url('../img/bg-main-header2.png') no-repeat top right 10%,
               linear-gradient(to right,#F4F9E2 80%,#fff 20%);
-  padding-top: 27px;
+  padding-top: 15px;
   padding-bottom: 75px;
 }
 @media (max-width: 1145px) {
   .main-header {
     background: url('../img/bg-main-header.png') no-repeat center right,
-                url('../img/bg-main-header2.png') no-repeat center right,
+                url('../img/bg-main-header2.png') no-repeat top right,
                 linear-gradient(to right,#F4F9E2 80%,#fff 20%);
   }
 }
@@ -83,7 +83,7 @@ div {
   align-items: center;
   flex-wrap: wrap;
 
-  margin-bottom: 164px;
+  margin-bottom: 178px;
 }
 
 .main-header .main-nav {
@@ -118,6 +118,10 @@ div {
   left: calc(50% - 25px);
 }
 
+.main-header .promo .logo {
+  margin-bottom: 44px;
+}
+
 .main-header .promo {
   max-width: 484px;
 }
@@ -132,18 +136,22 @@ div {
   font-weight: bold;
   font-size: 48px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .main-header .promo .text {
   font: inherit;
   font-size: 24px;
   line-height: 42px;
+  line-height: 45px;
+  margin-bottom: 64px;
 }
 
 .main-header .promo .btn {
   font: inherit;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 18px 36px;
   color: #FAB63E;
   text-transform: uppercase;
   text-decoration: none;
@@ -183,7 +191,7 @@ div {
 }
 @media (min-width: 1145px) {
   .features {
-    padding: 95px calc(50vw - 565px);
+    padding: 95px calc(50vw - 548px);
     background: url('../img/bg-features.jpg') no-repeat center right 8%,
               #62D0DF;
   }
