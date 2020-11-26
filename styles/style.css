@@ -233,3 +233,42 @@ div {
   font-weight: bold;
   font-size: 24px;
 }
+
+/* About section */
+
+.about {
+  padding: 0 15px;
+  padding-top: 150px;
+  font: inherit;
+  background-color: #fff;
+  position: relative;
+}
+@media (min-width: 1455px) {
+  .about {
+    padding: 0 calc(50vw - 720px);
+    padding-top: 150px;
+}
+}
+
+.about > .wrapper {
+  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about > .wrapper .title {
+  font: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  color: #22356F;
+  margin: 34px 15px 0;
+}
+
+.about > .wrapper .text {
+  font: inherit;
+  font-size: 24px;
+  font-weight: normal;
+  color: #22356F;
+  max-width: 554px;
+}
