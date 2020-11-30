@@ -27,7 +27,9 @@
   font-style: italic;
 }
 
-/* Common styles */
+
+
+/* Common styles start */
 
 body {
   font-family: 'Larsseit';
@@ -43,7 +45,11 @@ div {
   box-sizing: border-box;
 }
 
-/* Main header */
+/* Common styles end */
+
+
+
+/* Main header start */
 
 /* Content centering */
 .main-header {
@@ -178,7 +184,11 @@ div {
   border-radius: 50px;
 }
 
-/* Features section */
+/* Main header end */
+
+
+
+/* Features block start */
 
 .features {
   padding: 95px 15px;
@@ -242,7 +252,11 @@ div {
   font-size: 24px;
 }
 
-/* About section */
+/* Features block end */
+
+
+
+/* About block start */
 
 .about {
   padding: 0 15px;
@@ -281,7 +295,11 @@ div {
   max-width: 554px;
 }
 
-/* Services */
+/* About block end */
+
+
+
+/* Services block start */
 
 .services .title {
   font: inherit;
@@ -356,3 +374,5 @@ div {
   top: 72px;
   left: calc(50% - 127.5px);
 }
+
+/* Services block end */
