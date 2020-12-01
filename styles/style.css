@@ -532,3 +532,91 @@ div {
 }
 
 /* Info block end */
+
+
+
+/* Feedback block start */
+
+.feedback {
+  padding: 0 15px;
+  padding-top: 102px;
+  padding-bottom: 42px;
+  color: #fff;
+  background: url('../img/bg-feedback.jpg') no-repeat center right,
+              #22356F;
+  position: relative;
+
+  font: inherit;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.feedback .wrapper {
+  max-width: 580px;
+}
+
+.feedback .title {
+  font: inherit;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  margin-bottom: 230px;
+}
+
+.feedback .text-big {
+  font: inherit;
+  font-weight: bold;
+  font-size: 64px;
+
+  margin-bottom: 75px;
+}
+
+.feedback .text {
+  margin-bottom: 62px;
+}
+
+.feedback .btn {
+  font: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
+  color: #62D0DF;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  position: absolute;
+  bottom: 42px;
+}
+
+@media (min-width: 1145px) {
+  .feedback {
+    padding: 0 calc(50vw - 548px);
+    padding-top: 102px;
+    padding-bottom: 42px;
+    background: url('../img/bg-feedback.jpg') no-repeat center right 8%,
+                #22356F;
+  }
+}
+
+@media (max-width: 1138px) {
+  .feedback {
+    padding-top: 20px;
+    background: #22356F;
+  }
+
+  .feedback .wrapper {
+    margin: 0 auto;
+  }
+
+  .feedback .title,
+  .feedback .text-big {
+    margin-bottom: 20px;
+  }
+
+  .feedback .text-big {
+    text-align: center;
+  }
+
+}
+
+/* Feedback block end */
