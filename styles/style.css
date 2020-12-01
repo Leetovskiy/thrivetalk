@@ -203,7 +203,7 @@ div {
 
 .features {
   padding: 95px 15px;
-  background: url('../img/bg-features.jpg') no-repeat center right,
+  background: url('../img/bg-features.jpg') no-repeat center right contain,
             #62D0DF;
   font: inherit;
   color: #fff;
@@ -414,7 +414,7 @@ div {
 .services .wrapper2 .item:nth-child(1) { background-color: #22356F; }
 .services .wrapper2 .item:nth-child(2) { background-color: #0052C1; }
 .services .wrapper2 .item:nth-child(3) { 
-  background: url('../img/bg-services-item.jpg') center,
+  background: url('../img/bg-services-item.jpg') no-repeat center,
               #76B58B;
   background-size: cover;
 }
@@ -461,6 +461,74 @@ div {
   }
 }
 
-
-
 /* Methods block end */
+
+
+
+/* Info block start */
+
+.info {
+  padding: 102px 175px 42px 590px;
+  background: url('../img/bg-info.jpg') no-repeat left center,
+              #fff;
+  background-size: auto;
+  position: relative;
+
+  font: inherit;
+  font-size: 36px;
+  font-weight: bold;
+  color: #22356F;
+}
+
+.info .title {
+  font: inherit;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  margin-bottom: 225px;
+}
+
+.info .text {
+  font: inherit;
+  margin-bottom: 84px;
+}
+
+.info .text .strong {
+  color: #6CD3E1;
+}
+
+.info .btn {
+  font: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
+  color: #FAB63E;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  position: absolute;
+  bottom: 42px;
+  left: 590px;
+}
+
+@media (max-width: 1178px) {
+  .info {
+    padding: 20px 40px;
+    background: #fff;
+  }
+
+  .info .title {
+    margin-bottom: 20px;
+  }
+
+  .info .title {
+    margin-bottom: 20px;
+  }
+
+  .info .btn {
+    position: static;
+  }
+}
+
+/* Info block end */
