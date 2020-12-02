@@ -679,3 +679,27 @@ div {
 }
 
 /* SomeInfo block end */
+
+
+
+/* Footer block start */
+
+.main-footer {
+  padding: 10px 15px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 11px;
+
+  background: #62D0DF;
+  color: #fff;
+}
+
+
+@media (min-width: 1145px) {
+  .main-footer {
+    padding: 10px calc(50vw - 548px);
+  }
+}
+
+/* Footer block end */
