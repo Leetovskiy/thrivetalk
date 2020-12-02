@@ -119,6 +119,18 @@ div {
   padding: 0 13px;
 }
 
+.main-header .nav-item a:hover,
+.main-header .nav-item a:focus,
+.main-header .nav-item a:active {
+  opacity: .5;
+}
+
+.main-header .nav-item.current a:hover,
+.main-header .nav-item.current a:focus,
+.main-header .nav-item.current a:active {
+  opacity: 1;
+}
+
 .main-header .main-nav .nav-item.current {
   position: relative;
   user-select: none;
