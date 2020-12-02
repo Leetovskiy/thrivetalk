@@ -294,6 +294,7 @@ div {
   font: inherit;
   font-size: 16px;
   font-weight: normal;
+  text-transform: uppercase;
   color: #22356F;
   margin: 34px 15px 0;
 }
@@ -620,3 +621,61 @@ div {
 }
 
 /* Feedback block end */
+
+
+
+/* SomeInfo block start */
+
+.some-info {
+  padding: 98px 15px 74px 640px;
+  background: #fff url('../img/bg-footer.jpg') no-repeat left;
+}
+
+.some-info .info-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.some-info .info-item {
+  flex-basis: 240px;
+}
+
+.some-info .title {
+  font: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #22356F;
+}
+
+.some-info .text {
+  font: inherit;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.some-info .text a {
+  color: #006DFF;
+  text-decoration: none;
+}
+
+@media (max-width: 1378px) {
+  .some-info {
+    padding: 20px 15px;
+    background: #fff;
+  }
+
+  .some-info .info-items {
+    justify-content: space-around;
+  }
+
+  .some-info .title,
+  .some-info .text {
+    font-size: 20px;
+  }
+}
+
+/* SomeInfo block end */
