@@ -117,18 +117,18 @@ div {
   text-decoration: none;
 
   padding: 0 13px;
-}
 
+  transition: .1s;
+}
 .main-header .nav-item a:hover,
 .main-header .nav-item a:focus,
 .main-header .nav-item a:active {
-  opacity: .5;
+  color: #62D0DF;
 }
-
 .main-header .nav-item.current a:hover,
 .main-header .nav-item.current a:focus,
 .main-header .nav-item.current a:active {
-  opacity: 1;
+  color: #22356F;
 }
 
 .main-header .main-nav .nav-item.current {
@@ -185,10 +185,21 @@ div {
   text-transform: uppercase;
   text-decoration: none;
 }
+.main-header .promo .btn:hover,
+.main-header .promo .btn:focus,
+.main-header .promo .btn:active {
+  background: #A36F14;
+  color: #fff;
+  text-decoration: underline;
+}
+.main-header .promo .btn:active {
+  opacity: .5;
+}
 
 .main-header .promo .btn-filled {
   color: #fff;
   background-color: #F9B640;
+  transition: .1s;
 }
 
 .main-header .contact-btn {
@@ -196,7 +207,7 @@ div {
   width: 150px;
   height: 50px;
   color: #fff;
-  background-color: #62D0DF;
+  background-color: #62d1df;
   font: inherit;
   font-size: 14px;
   font-weight: bold;
@@ -205,6 +216,15 @@ div {
   text-transform: uppercase;
   text-align: center;
   border-radius: 50px;
+  transition: .1s;
+}
+.main-header .contact-btn:hover,
+.main-header .contact-btn:active,
+.main-header .contact-btn:focus {
+  background-color: #208391;
+}
+.main-header .contact-btn:active {
+  opacity: .5;
 }
 
 /* Main header end */
@@ -523,6 +543,17 @@ div {
   position: absolute;
   bottom: 42px;
   left: 590px;
+
+  transition: .1s;
+}
+.info .btn:hover,
+.info .btn:active,
+.info .btn:focus {
+  color: #A36F14;
+  text-decoration: underline;
+}
+.info .btn:active {
+opacity: .5;
 }
 
 @media (max-width: 1178px) {
@@ -599,6 +630,17 @@ div {
 
   position: absolute;
   bottom: 42px;
+
+  transition: .1s;
+}
+.feedback .btn:hover,
+.feedback .btn:active,
+.feedback .btn:focus {
+  color: #208391;
+  text-decoration: underline;
+}
+.feedback .btn:active {
+opacity: .5;
 }
 
 @media (min-width: 1145px) {
@@ -672,7 +714,18 @@ div {
 .some-info .text a {
   color: #006DFF;
   text-decoration: none;
+  transition: .1s;
 }
+.some-info .text a:hover,
+.some-info .text a:active,
+.some-info .text a:focus {
+  color: #0046A6;
+  text-decoration: underline;
+}
+.some-info .text a:active {
+  opacity: .5;
+}
+
 
 @media (max-width: 1378px) {
   .some-info {
