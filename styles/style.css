@@ -13,7 +13,7 @@
       url('../fonts/Larsseit/Larsseit-Bold.eot?#iefix') format('embedded-opentype'),
       url('../fonts/Larsseit/Larsseit-Bold.woff2') format('woff2'),
       url('../fonts/Larsseit/Larsseit-Bold.woff') format('woff'),
-      url('../fonts/Larsseit/Larsseit-Bold.ttf') format('truetype');
+      /* url('../fonts/Larsseit/Larsseit-Bold.ttf') format('truetype'); */
   font-weight: bold;
   font-style: normal;
 } @font-face {
@@ -29,7 +29,7 @@
 
 
 
-/* Common styles start */
+/* General styles start */
 
 body {
   font-family: 'Larsseit';
@@ -56,7 +56,41 @@ div {
 	overflow: hidden;
 }
 
-/* Common styles end */
+.btn {
+  font: inherit;
+  font-weight: bold;
+  padding: 18px 36px;
+  color: #FAB63E;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: .05s;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: #A36F14;
+  text-decoration: underline;
+}
+.btn:active {
+  opacity: .5;
+}
+
+.btn-filled {
+  color: #fff;
+  background-color: #F9B640;
+}
+.btn-filled:hover,
+.btn-filled:focus,
+.btn-filled:active {
+  background-color: #A36F14;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+}
+
+
+/* General styles end */
 
 
 
@@ -123,7 +157,7 @@ div {
 
   padding: 0 13px;
 
-  transition: .1s;
+  transition: .05s;
 }
 .main-header .nav-item a:hover,
 .main-header .nav-item a:focus,
@@ -182,31 +216,6 @@ div {
   margin-bottom: 64px;
 }
 
-.main-header .promo .btn {
-  font: inherit;
-  font-weight: bold;
-  padding: 18px 36px;
-  color: #FAB63E;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.main-header .promo .btn:hover,
-.main-header .promo .btn:focus,
-.main-header .promo .btn:active {
-  background: #A36F14;
-  color: #fff;
-  text-decoration: underline;
-}
-.main-header .promo .btn:active {
-  opacity: .5;
-}
-
-.main-header .promo .btn-filled {
-  color: #fff;
-  background-color: #F9B640;
-  transition: .1s;
-}
-
 .main-header .contact-btn {
   display: block;
   width: 150px;
@@ -221,7 +230,7 @@ div {
   text-transform: uppercase;
   text-align: center;
   border-radius: 50px;
-  transition: .1s;
+  transition: .05s;
 }
 .main-header .contact-btn:hover,
 .main-header .contact-btn:active,
@@ -556,24 +565,10 @@ div {
   font-weight: bold;
   font-size: 16px;
   padding: 0;
-  color: #FAB63E;
-  text-transform: uppercase;
-  text-decoration: none;
 
   position: absolute;
   bottom: 42px;
   left: 590px;
-
-  transition: .1s;
-}
-.info .btn:hover,
-.info .btn:active,
-.info .btn:focus {
-  color: #A36F14;
-  text-decoration: underline;
-}
-.info .btn:active {
-opacity: .5;
 }
 
 @media (max-width: 1178px) {
@@ -645,22 +640,14 @@ opacity: .5;
   font-size: 16px;
   padding: 0;
   color: #62D0DF;
-  text-transform: uppercase;
-  text-decoration: none;
 
   position: absolute;
   bottom: 42px;
-
-  transition: .1s;
 }
 .feedback .btn:hover,
 .feedback .btn:active,
 .feedback .btn:focus {
   color: #208391;
-  text-decoration: underline;
-}
-.feedback .btn:active {
-opacity: .5;
 }
 
 @media (min-width: 1145px) {
@@ -734,7 +721,7 @@ opacity: .5;
 .some-info .text a {
   color: #006DFF;
   text-decoration: none;
-  transition: .1s;
+  transition: .05s;
 }
 .some-info .text a:hover,
 .some-info .text a:active,
